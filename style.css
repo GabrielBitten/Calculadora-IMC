@@ -1,0 +1,154 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(imagem.gif);
+    background-size: cover;
+}
+
+.hide{
+    display: none !important;
+}
+
+.container{
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #712fc8;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+
+#calc-container h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    color: white;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+input{
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: white;
+}
+.form-control input{
+    padding: 1rem 0.5rem;
+}
+.action-control{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+button{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border: 2px solid #c179ff;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #c179ff;
+    transition: 0.3s;
+    flex: 1;
+    opacity: 0.8;
+}
+button:hover{
+    border: 2px solid #c179ff;
+    background-color: #712fc8;
+    color: #c179ff;
+    opacity: 1;
+}
+
+
+#result-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-number{
+    font-weight: bold;
+    color: white;
+    font-size:  2.4rem;
+    margin-bottom: 0.6rem;
+}
+#imc-info{
+    font-size: 1.4rem;
+    color: white;
+}
+
+#result-container h3{
+    margin-top: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#imc-table{
+    margin: 1.5 rem 0;
+    font-size: 0.8rem;
+}
+
+.table-header{
+    font-weight: bold;
+    color: white;
+}
+.table-header,
+.table-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #c179ff;
+}
+.table-header h4,
+.table-data p{
+    flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3){
+    max-width: 80px;
+
+}
+#back-btn{
+    align-self: center;
+}
+.good{
+    color: #12db34;
+}
+.low{
+    color: #dbce12;
+}
+.medium{
+    color: #db6212;
+}
+.high{
+    color: #db1912;
+}
